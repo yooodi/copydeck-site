@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CopyDeck Privacy Policy</title>
+<style>
+  :root { --bg: #f9fafa; --fg: #181c1b; --muted: #59625f; --accent: #0f766e; --line: #dce1df; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0f1312; --fg: #e0e4e2; --muted: #b8c1be; --accent: #62d3c1; --line: #2e3533; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.8rem; margin: 0 0 4px; }
+  h2 { font-size: 1.15rem; margin: 32px 0 8px; color: var(--accent); }
+  p, li { color: var(--fg); }
+  .muted { color: var(--muted); }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 48px 0; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+
+<h1>CopyDeck Privacy Policy</h1>
+<p class="muted">Effective 17 November 2026 · <a href="#ro">Română mai jos</a></p>
+
+<p>CopyDeck is an Android app and home-screen widget for texts, links, photos, files, app shortcuts and phone settings you use often. This policy explains what happens to your information when you use it. In short: <strong>everything stays on your phone. CopyDeck has no account, no ads and no analytics, and it sends nothing to us or to any server of ours.</strong> The one exception is AI search, which is off unless you turn it on: then the items of the tabs you chose go to the AI service you set up, with your own key (see <a href="#ai">AI search</a>).</p>
+
+<h2>What CopyDeck stores, and where</h2>
+<p>Everything you add is stored only in the app's private storage on your phone:</p>
+<ul>
+  <li>the texts and links you save, and the names of your tabs;</li>
+  <li>shortcuts to apps you pick (the app's name and package name);</li>
+  <li>photos, GIFs and videos you pin: CopyDeck keeps its own copy without the original's metadata (such as location): photos are re-saved, videos are rewritten into a new file, GIFs carry none;</li>
+  <li>files you pin: a reference to the file plus Android's permission to open it, or a copy of the file if you choose "Keep a copy";</li>
+  <li>phone toggles you pick, and the app's settings;</li>
+  <li>if you use AI search: what the AI said about each item (its text, a description, keywords), and your AI key, encrypted.</li>
+</ul>
+<p>We (the developer) never receive any of it.</p>
+
+<h2>What CopyDeck does not do</h2>
+<ul>
+  <li>It does not collect, sell or share personal data.</li>
+  <li>It has no account and no sign-in, and runs no analytics, advertising or tracking code.</li>
+  <li>It never reads your clipboard. It only writes to it when you tap a text to copy it.</li>
+  <li>It does not upload your texts, photos or files anywhere, except to the AI service you set up, for the tabs where you turned AI search on.</li>
+</ul>
+
+<h2>When information leaves the app</h2>
+<ul>
+  <li><strong>When you share.</strong> When you tap Share, Android's share sheet sends the photos or files you picked to the app you choose (for example WhatsApp or Gmail). That app's own privacy policy then applies.</li>
+  <li><strong>When you export.</strong> "Export to a file" saves a backup file wherever you choose. You decide what happens to that file.</li>
+  <li><strong>Android backup.</strong> If backup is turned on in your phone's settings, Android may back up your texts and settings to your own Google account, as it does for other apps. Pinned photos and kept file copies are left out of this cloud backup. This backup is run by Android and Google under your Google account; we cannot access it. A direct phone-to-phone transfer also moves the photos and copies.</li>
+  <li><strong>Purchases.</strong> CopyDeck Pro is sold through Google Play. Google Play handles the payment and its data under <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. The app only learns from Google Play whether Pro is active on your account, and keeps that answer on your phone. It never sees your payment details. Google's Play libraries in the app talk to Google Play to make this work.</li>
+</ul>
+
+<h2 id="ai">AI search (optional, off by default)</h2>
+<p>With CopyDeck Pro you can turn on AI search for a photos or files tab, and add your own key from <a href="https://www.anthropic.com">Anthropic</a> (Claude), from <a href="https://openrouter.ai">OpenRouter</a>, or both: AI services you sign up for and pay yourself. Then:</p>
+<ul>
+  <li><strong>What is sent:</strong> each photo, GIF, video or document of those tabs, once, to be described (a smaller copy of a photo, a few frames of a GIF or a long video, a short video whole with its sound, a PDF as it is, the start of a text file), with the name you gave it. When you use "Ask AI" in search, your search words and a short line about each described item (its name and keywords) are sent, not the items themselves. Nothing from the other tabs is sent.</li>
+  <li><strong>To whom:</strong> with a Claude key, to Anthropic, which describes everything except videos (and videos too, from a few frames, when you have no OpenRouter key). Anthropic doesn't train its models on what is sent through its API and keeps it only for a limited time; <a href="https://www.anthropic.com/legal/privacy">Anthropic's privacy policy</a> applies. With an OpenRouter key, to OpenRouter and through it to the provider of the AI model you chose (Google by default): videos when you also have a Claude key, everything otherwise. CopyDeck asks OpenRouter to use only providers that don't store or train on what they're sent; <a href="https://openrouter.ai/privacy">OpenRouter's</a> and the model provider's privacy policies apply. Each goes with your own key. Nothing is sent to us, and we can't see your keys, your items or what the AI says.</li>
+  <li><strong>What is kept:</strong> the AI's answer is stored on your phone, so search works offline. It can contain text read from your documents (for example a name or an ID number on an ID card). It is part of the app's database, so it is included in your Android backup like your texts.</li>
+  <li><strong>Your keys</strong> are stored on your phone, encrypted with a key held by Android's secure key store, each sent only to its own service, and left out of backups.</li>
+  <li><strong>To stop:</strong> turn AI search off for the tab, or remove the keys in Settings. Deleting an item deletes what the AI said about it.</li>
+</ul>
+
+<h2>Permissions</h2>
+<ul>
+  <li><strong>See which apps are installed</strong> (limited to apps with a launcher icon): to let you pick app shortcuts and show their icons. The list is not stored or sent anywhere.</li>
+  <li><strong>Do Not Disturb access, Modify system settings</strong>: only if you pin those toggles and allow them. They let CopyDeck switch Do Not Disturb, auto-rotate, auto-brightness and the screen timeout for you.</li>
+  <li><strong>Write secure settings</strong>: only for advanced toggles (location, battery saver, wireless debugging, animations), and only if you grant it yourself with a computer command. Without it, those toggles open Android's settings page instead.</li>
+  <li><strong>Run at startup</strong>: to redraw the widget after the phone restarts.</li>
+  <li><strong>Internet and background work</strong>: for AI search, only when you turned it on and added your key (described above), and for Google's libraries for Google Play purchases and keeping the widget up to date. Otherwise CopyDeck's own code makes no network requests.</li>
+</ul>
+
+<h2>Deleting your data</h2>
+<p>Delete any item, tab or photo in the app at any time. Uninstalling CopyDeck, or clearing its storage in Android's settings, deletes everything it stored on your phone. You can manage or delete Android backups in your Google account settings.</p>
+
+<h2>Children</h2>
+<p>CopyDeck is not directed at children under 13 and collects no data from anyone.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the new version will be published at this address with a new effective date.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy: <a href="mailto:support@copydeck.app">support@copydeck.app</a></p>
+
+<hr>
+
+<h1 id="ro">Politica de confidențialitate CopyDeck</h1>
+<p class="muted">În vigoare din 17 noiembrie 2026</p>
+
+<p>CopyDeck este o aplicație Android cu widget pentru ecranul principal, în care păstrezi texte, linkuri, poze, fișiere, scurtături la aplicații și setări ale telefonului pe care le folosești des. Pe scurt: <strong>totul rămâne pe telefonul tău. CopyDeck nu are cont, reclame sau statistici și nu trimite nimic către noi sau către vreun server al nostru.</strong> Singura excepție e căutarea cu AI, oprită dacă nu o pornești tu: atunci elementele filelor alese merg la serviciul AI configurat de tine, cu propria cheie (vezi <a href="#ai-ro">Căutarea cu AI</a>).</p>
+
+<h2>Ce păstrează CopyDeck și unde</h2>
+<p>Tot ce adaugi se păstrează doar în spațiul privat al aplicației, pe telefon:</p>
+<ul>
+  <li>textele și linkurile salvate și numele filelor;</li>
+  <li>scurtăturile la aplicațiile alese (numele aplicației și al pachetului);</li>
+  <li>pozele, GIF-urile și videoclipurile fixate: o copie proprie, fără metadatele originalului (de exemplu locația): pozele sunt salvate din nou, videoclipurile rescrise într-un fișier nou, iar GIF-urile nu au metadate;</li>
+  <li>fișierele fixate: o trimitere la fișier, cu permisiunea Android de a-l deschide, sau o copie, dacă alegi „Păstrează o copie”;</li>
+  <li>comutatoarele alese și setările aplicației;</li>
+  <li>dacă folosești căutarea cu AI: ce a spus AI-ul despre fiecare element (textul, o descriere, cuvinte-cheie) și cheia ta AI, criptată.</li>
+</ul>
+<p>Noi (dezvoltatorul) nu primim nimic din toate acestea.</p>
+
+<h2>Ce nu face CopyDeck</h2>
+<ul>
+  <li>Nu colectează, nu vinde și nu partajează date personale.</li>
+  <li>Nu are cont sau autentificare și nu conține cod de statistici, reclame sau urmărire.</li>
+  <li>Nu citește niciodată clipboardul. Scrie în el doar când atingi un text ca să-l copiezi.</li>
+  <li>Nu încarcă nicăieri textele, pozele sau fișierele tale, în afară de serviciul AI configurat de tine, pentru filele în care ai pornit căutarea cu AI.</li>
+</ul>
+
+<h2>Când ies informații din aplicație</h2>
+<ul>
+  <li><strong>Când trimiți.</strong> Când atingi Trimite, ecranul de partajare Android trimite pozele sau fișierele alese aplicației pe care o alegi tu (de exemplu WhatsApp sau Gmail). Se aplică apoi politica acelei aplicații.</li>
+  <li><strong>Când exporți.</strong> „Exportă într-un fișier” salvează un fișier de backup unde alegi tu. Tu decizi ce se întâmplă cu el.</li>
+  <li><strong>Backupul Android.</strong> Dacă backupul e pornit în setările telefonului, Android poate salva textele și setările în propriul tău cont Google, ca pentru orice aplicație. Pozele fixate și copiile de fișiere nu intră în acest backup în cloud. Backupul e gestionat de Android și Google în contul tău; noi nu avem acces la el. Transferul direct de pe un telefon pe altul mută și pozele și copiile.</li>
+  <li><strong>Achiziții.</strong> CopyDeck Pro se vinde prin Google Play. Plata și datele ei sunt gestionate de Google Play, conform <a href="https://policies.google.com/privacy">Politicii de confidențialitate Google</a>. Aplicația află de la Google Play doar dacă Pro e activ în contul tău și păstrează răspunsul pe telefon. Nu vede niciodată datele de plată.</li>
+</ul>
+
+<h2 id="ai-ro">Căutarea cu AI (opțională, oprită implicit)</h2>
+<p>Cu CopyDeck Pro poți porni căutarea cu AI pentru o filă de poze sau fișiere și poți adăuga propria cheie de la <a href="https://www.anthropic.com">Anthropic</a> (Claude), de la <a href="https://openrouter.ai">OpenRouter</a> sau pe amândouă: servicii AI la care te înscrii și pe care le plătești tu. Atunci:</p>
+<ul>
+  <li><strong>Ce se trimite:</strong> fiecare poză, GIF, videoclip sau document din acele file, o singură dată, ca să fie descris (o copie mai mică a pozei, câteva cadre dintr-un GIF sau dintr-un videoclip lung, un videoclip scurt întreg, cu sunet, un PDF așa cum e, începutul unui fișier text), împreună cu numele dat de tine. Când folosești „Întreabă AI” în căutare, se trimit cuvintele căutate și un scurt rând despre fiecare element descris (nume și cuvinte-cheie), nu elementele. Nimic din celelalte file nu se trimite.</li>
+  <li><strong>Către cine:</strong> cu o cheie Claude, către Anthropic, care descrie tot în afară de videoclipuri (și videoclipurile, din câteva cadre, dacă nu ai cheie OpenRouter). Anthropic nu își antrenează modelele pe ce se trimite prin API-ul său și păstrează datele doar o perioadă limitată; se aplică <a href="https://www.anthropic.com/legal/privacy">politica de confidențialitate Anthropic</a>. Cu o cheie OpenRouter, către OpenRouter și, prin el, către furnizorul modelului AI ales de tine (implicit Google): videoclipurile când ai și cheie Claude, altfel tot. CopyDeck îi cere lui OpenRouter să folosească doar furnizori care nu păstrează și nu se antrenează pe ce primesc; se aplică politicile <a href="https://openrouter.ai/privacy">lui OpenRouter</a> și a furnizorului modelului. Fiecare merge cu cheia ta. Nimic nu ajunge la noi și nu putem vedea cheile, elementele tale sau ce spune AI-ul.</li>
+  <li><strong>Ce se păstrează:</strong> răspunsul AI-ului e salvat pe telefon, ca să cauți și fără internet. Poate conține text citit din documente (de exemplu un nume sau un CNP de pe buletin). Face parte din baza de date a aplicației, deci intră în backupul Android, ca textele.</li>
+  <li><strong>Cheile tale</strong> sunt păstrate pe telefon, criptate cu o cheie ținută de depozitul securizat al Android, fiecare trimisă doar la serviciul ei și lăsate în afara backupurilor.</li>
+  <li><strong>Ca să oprești:</strong> oprește căutarea cu AI pentru filă sau șterge cheile din Setări. Ștergerea unui element șterge și ce a spus AI-ul despre el.</li>
+</ul>
+
+<h2>Permisiuni</h2>
+<ul>
+  <li><strong>Vederea aplicațiilor instalate</strong> (doar cele cu pictogramă): ca să alegi scurtături și să le vezi pictogramele. Lista nu se păstrează și nu se trimite nicăieri.</li>
+  <li><strong>Acces Nu deranja, Modificarea setărilor sistemului</strong>: doar dacă fixezi acele comutatoare și le permiți. Pornesc sau opresc Nu deranja, rotirea automată, luminozitatea automată și durata ecranului.</li>
+  <li><strong>Scrierea setărilor securizate</strong>: doar pentru comutatoarele avansate (locație, economisire baterie, depanare wireless, animații) și doar dacă o acorzi tu, cu o comandă de pe calculator.</li>
+  <li><strong>Pornire la deschiderea telefonului</strong>: ca widgetul să se redeseneze după repornire.</li>
+  <li><strong>Internet și lucru în fundal</strong>: pentru căutarea cu AI, doar dacă ai pornit-o și ai adăugat cheia (descrisă mai sus), și pentru bibliotecile Google, la achizițiile prin Google Play și actualizarea widgetului. În rest, codul CopyDeck nu face cereri în rețea.</li>
+</ul>
+
+<h2>Ștergerea datelor</h2>
+<p>Poți șterge oricând orice element, filă sau poză din aplicație. Dezinstalarea CopyDeck sau ștergerea datelor ei din setările Android șterge tot ce a păstrat pe telefon. Backupurile Android le gestionezi din setările contului Google.</p>
+
+<h2>Copii</h2>
+<p>CopyDeck nu se adresează copiilor sub 13 ani și nu colectează date de la nimeni.</p>
+
+<h2>Modificări</h2>
+<p>Dacă politica se schimbă, noua versiune va fi publicată la această adresă, cu o nouă dată de intrare în vigoare.</p>
+
+<h2>Contact</h2>
+<p>Întrebări despre această politică: <a href="mailto:support@copydeck.app">support@copydeck.app</a></p>
+
+</main>
+</body>
+</html>
